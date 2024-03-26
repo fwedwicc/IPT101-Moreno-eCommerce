@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- Navbar -->
-  <div class="navbar bg-base-100 p-5 fixed px-24">
+  <div class="navbar bg-base-100 p-5 fixed px-24 z-20">
     <!-- Logo -->
     <div class="flex-1">
       <a class="btn btn-ghost text-xl">Funko</a>
@@ -117,6 +117,157 @@
       <div class="col-span-1">
         <img src="./images/Pop! Demon Slayer 4-Pack, , hi-res.png" alt="" class="w-[105rem]">
       </div>
+    </div>
+    <!-- Popular Products -->
+    <div class="min-h-screen px-28 space-y-16 flex flex-col justify-center items-center">
+      <h1 class="text-4xl font-bold">Popular</h1>
+      <div class="flex space-x-8">
+        <!-- Card 1 -->
+        <div class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center">
+          <figure><img src="./images/Pop! Tanjiro Kamado, , hi-res.png" alt="" class="w-56">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              POP! TANJIRO KAMADO
+            </h2>
+            <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
+            <!-- Rating -->
+            <div class="rating rating-sm rating-half flex items-center">
+              <input type="radio" name="rating-10" class="rating-hidden" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <span class="ml-3 text-xs">10</span>
+            </div>
+            <div class="card-actions justify-end grid grid-cols-8 pt-7">
+              <button class="btn btn-primary col-span-6">Add to cart</button>
+              <button class="btn btn-neutral col-span-2">
+                <svg class="text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  width="30" height="30" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center">
+          <figure><img src="./images/Pop! Nezuko Kamado, , hi-res.png" alt="" class="w-56">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              POP! TANJIRO KAMADO
+            </h2>
+            <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
+            <!-- Rating -->
+            <div class="rating rating-sm rating-half flex items-center">
+              <input type="radio" name="rating-10" class="rating-hidden" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <span class="ml-3 text-xs">10</span>
+            </div>
+            <div class="card-actions justify-end grid grid-cols-8 pt-7">
+              <button class="btn btn-primary col-span-6">Add to cart</button>
+              <button class="btn btn-neutral col-span-2">
+                <svg class="text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  width="30" height="30" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center">
+          <figure><img src="./images/Pop! Inosuke Hashibira, , hi-res.png" alt="" class="w-56">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              POP! TANJIRO KAMADO
+            </h2>
+            <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
+            <!-- Rating -->
+            <div class="rating rating-sm rating-half flex items-center">
+              <input type="radio" name="rating-10" class="rating-hidden" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <span class="ml-3 text-xs">10</span>
+            </div>
+            <div class="card-actions justify-end grid grid-cols-8 pt-7">
+              <button class="btn btn-primary col-span-6">Add to cart</button>
+              <button class="btn btn-neutral col-span-2">
+                <svg class="text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  width="30" height="30" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center">
+          <figure><img src="./images/Pop! Zenitsu Agatsuma, , hi-res.png" alt="" class="w-56">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              POP! TANJIRO KAMADO
+            </h2>
+            <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
+            <!-- Rating -->
+            <div class="rating rating-sm rating-half flex items-center">
+              <input type="radio" name="rating-10" class="rating-hidden" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <span class="ml-3 text-xs">10</span>
+            </div>
+            <div class="card-actions justify-end grid grid-cols-8 pt-7">
+              <button class="btn btn-primary col-span-6">Add to cart</button>
+              <button class="btn btn-neutral col-span-2">
+                <svg class="text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  width="30" height="30" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="link link-primary" style="margin-top: 2rem;">View all</a>
     </div>
   </main>
   <!-- Footer -->

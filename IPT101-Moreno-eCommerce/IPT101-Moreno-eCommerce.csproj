@@ -68,7 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Images\model-landing-page.jpg" />
+    <Content Include="Images\Pop! Demon Slayer 4-Pack, , hi-res.png" />
+    <Content Include="Images\profile-1.png" />
+    <Content Include="Images\profile-2.png" />
+    <Content Include="Images\profile-3.png" />
+    <Content Include="Images\profile-4.png" />
+    <Content Include="Images\profile-5.png" />
+    <Content Include="Images\profile-6.png" />
+    <Content Include="Images\profile-more.png" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>

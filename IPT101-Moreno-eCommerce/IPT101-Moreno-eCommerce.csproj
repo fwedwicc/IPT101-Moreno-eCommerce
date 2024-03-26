@@ -69,10 +69,22 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Images\about-background.png" />
+    <Content Include="Images\Pop! Daki, , hi-res.png" />
     <Content Include="Images\Pop! Demon Slayer 4-Pack, , hi-res.png" />
+    <Content Include="Images\Pop! Genya Shinazugawa, , hi-res.png" />
+    <Content Include="Images\Pop! Haganezuka, , hi-res.png" />
     <Content Include="Images\Pop! Inosuke Hashibira, , hi-res.png" />
+    <Content Include="Images\Pop! Jumbo Kyojuro Rengoku, , hi-res.png" />
+    <Content Include="Images\Pop! Kanao Tsuyuri, , hi-res.png" />
+    <Content Include="Images\Pop! Makomo, , hi-res.png" />
+    <Content Include="Images\Pop! Mitsuri Kanroji, , hi-res.png" />
     <Content Include="Images\Pop! Nezuko Kamado, , hi-res.png" />
+    <Content Include="Images\Pop! Rui, , hi-res.png" />
+    <Content Include="Images\Pop! Sabito, , hi-res.png" />
+    <Content Include="Images\Pop! Susamaru, , hi-res.png" />
+    <Content Include="Images\Pop! Tamayo, , hi-res.png" />
     <Content Include="Images\Pop! Tanjiro Kamado, , hi-res.png" />
+    <Content Include="Images\Pop! Tengen Uzui with Nichirin Cleavers, , hi-res.png" />
     <Content Include="Images\Pop! Zenitsu Agatsuma, , hi-res.png" />
     <Content Include="Images\profile-1.png" />
     <Content Include="Images\profile-2.png" />
@@ -83,6 +95,7 @@
     <Content Include="Images\profile-more.png" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -95,6 +108,13 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

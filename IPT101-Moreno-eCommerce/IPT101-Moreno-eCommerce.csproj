@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Images\about-background.png" />
     <Content Include="Images\Pop! Demon Slayer 4-Pack, , hi-res.png" />
     <Content Include="Images\Pop! Inosuke Hashibira, , hi-res.png" />
     <Content Include="Images\Pop! Nezuko Kamado, , hi-res.png" />

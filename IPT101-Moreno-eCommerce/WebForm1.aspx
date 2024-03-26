@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" class="scroll-smooth">
 <head runat="server">
 <title>FUNKO | E-Commerce Website</title>
 <!-- DaisyUI cdn -->
@@ -13,15 +13,14 @@
   <div class="navbar bg-base-100 p-5 fixed px-24 z-20">
     <!-- Logo -->
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl">Funko</a>
+      <a class="font-bold text-3xl">Funko</a>
     </div>
     <!-- Links group -->
     <ul tabindex="0" class="flex flex-row flex-1 gap-9 mr-12">
       <li><a href="#home">Home</a></li>
-      <li><a>About</a></li>
-      <li><a>Collection</a></li>
-      <li><a>FAQ</a></li>
-      <li><a>Subscribe</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="./collection.html">Collection</a></li>
+      <li><a href="#subscribe">Subscribe</a></li>
     </ul>
     <div class="flex-none gap-2">
       <!-- Search bar -->
@@ -29,7 +28,7 @@
         <input type="text" placeholder="Search" class="input input-bordered w-96" />
       </div>
       <!-- Mode Toggle -->
-      <label class="swap swap-rotate">
+      <label class="swap swap-rotate mr-2">
         <!-- this hidden checkbox controls the state -->
         <input type="checkbox" class="theme-controller" value="light" />
         <!-- sun icon -->
@@ -43,6 +42,27 @@
             d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
         </svg>
       </label>
+      <!-- Wishlist -->
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <div class="indicator">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+            </svg>
+            <span class="badge badge-sm indicator-item">4</span>
+          </div>
+        </div>
+        <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+          <div class="card-body">
+            <span class="font-bold text-lg">4 Items</span>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-block">View wishlist</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Cart -->
       <div class="dropdown dropdown-end">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -58,7 +78,7 @@
         <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
           <div class="card-body">
             <span class="font-bold text-lg">8 Items</span>
-            <span class="text-info">Subtotal: $999</span>
+            <span class="text-info">Subtotal: ₱1200</span>
             <div class="card-actions">
               <button class="btn btn-primary btn-block">View cart</button>
             </div>
@@ -68,9 +88,12 @@
       <!-- Profile -->
       <div class="dropdown dropdown-end">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-          <div class="w-8 rounded-full">
-            <img alt="Tailwind CSS Navbar component"
-              src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+          <div class="rounded-full">
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a8.949 8.949 0 0 0 4.951-1.488A3.987 3.987 0 0 0 13 16h-2a3.987 3.987 0 0 0-3.951 3.512A8.948 8.948 0 0 0 12 21Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
           </div>
         </div>
         <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -97,8 +120,8 @@
           Slayer set and immerse yourself in the epic battles and unforgettable moments from this beloved series!</p>
         <!-- Email input for subscribe -->
         <div class="join">
-          <input class="input input-bordered join-item w-52" placeholder="Email" />
-          <button class="btn join-item rounded-r">Subscribe</button>
+          <input class="input input-bordered join-item w-52" placeholder="Your email address" />
+          <button class="btn join-item rounded-xl bg-base-300">Subscribe</button>
         </div>
         <!-- Shop now button -->
         <button class="btn btn-primary ml-4">Shop now</button>
@@ -118,12 +141,29 @@
         <img src="./images/Pop! Demon Slayer 4-Pack, , hi-res.png" alt="" class="w-[105rem]">
       </div>
     </div>
+    <!-- About -->
+    <div
+      class="min-h-screen px-28 space-y-12 bg-base-200 flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat"
+      style="background-image: url('./images/about-background.png')" id="about">
+      <h1 class="text-7xl text-center font-bold text-white">Discover the World of Funko Pop's Demon Slayer Edition
+      </h1>
+      <p class="text-white text-center px-44">Welcome to the electrifying realm of Funko Pop's Demon Slayer edition,
+        whereiconic characters from the acclaimed anime series come to life in the palm of your hand. Crafted with
+        meticulous attention to detail, our Demon Slayer Funko Pop collection encapsulates the spirit and essence of
+        this beloved franchise.Immerse yourself in the mystical world of demon-slaying warriors as you explore our
+        diverse range of figurines. From the determined Tanjiro Kamado to the resilient Nezuko, each Pop captures the
+        essence of these heroic characters, making them a must-have for any fan or collector.With Funko Pop's Demon
+        Slayer edition, you can bring the thrill of the battlefield and the camaraderie of the Demon Slayer Corps into
+        your home. Join us on this epic journey as we celebrate the indomitable spirit of these remarkable characters
+        and the timeless appeal of Demon Slayer.
+      </p>
+    </div>
     <!-- Popular Products -->
-    <div class="min-h-screen px-28 space-y-16 flex flex-col justify-center items-center">
+    <div class="min-h-screen px-28 space-y-12 flex flex-col justify-center items-center">
       <h1 class="text-4xl font-bold">Popular</h1>
       <div class="flex space-x-8">
         <!-- Card 1 -->
-        <div class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center">
+        <div class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
           <figure><img src="./images/Pop! Tanjiro Kamado, , hi-res.png" alt="" class="w-56">
           </figure>
           <div class="card-body">
@@ -134,18 +174,20 @@
             <!-- Rating -->
             <div class="rating rating-sm rating-half flex items-center">
               <input type="radio" name="rating-10" class="rating-hidden" disabled checked />
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
               <span class="ml-3 text-xs">10</span>
             </div>
+            <!-- Price -->
+            <span class="text-lg font-medium">₱675.25</span>
             <div class="card-actions justify-end grid grid-cols-8 pt-7">
               <button class="btn btn-primary col-span-6">Add to cart</button>
               <button class="btn btn-neutral col-span-2">
@@ -159,29 +201,31 @@
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center">
+        <div class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
           <figure><img src="./images/Pop! Nezuko Kamado, , hi-res.png" alt="" class="w-56">
           </figure>
           <div class="card-body">
             <h2 class="card-title">
-              POP! TANJIRO KAMADO
+              POP! NEZUKO KAMADO
             </h2>
             <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
             <!-- Rating -->
             <div class="rating rating-sm rating-half flex items-center">
               <input type="radio" name="rating-10" class="rating-hidden" disabled checked />
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
               <span class="ml-3 text-xs">10</span>
             </div>
+            <!-- Price -->
+            <span class="text-lg font-medium">₱675.25</span>
             <div class="card-actions justify-end grid grid-cols-8 pt-7">
               <button class="btn btn-primary col-span-6">Add to cart</button>
               <button class="btn btn-neutral col-span-2">
@@ -195,29 +239,31 @@
           </div>
         </div>
         <!-- Card 3 -->
-        <div class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center">
+        <div class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
           <figure><img src="./images/Pop! Inosuke Hashibira, , hi-res.png" alt="" class="w-56">
           </figure>
           <div class="card-body">
             <h2 class="card-title">
-              POP! TANJIRO KAMADO
+              POP! INOSUKE HASHIBIRA
             </h2>
             <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
             <!-- Rating -->
             <div class="rating rating-sm rating-half flex items-center">
               <input type="radio" name="rating-10" class="rating-hidden" disabled checked />
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
               <span class="ml-3 text-xs">10</span>
             </div>
+            <!-- Price -->
+            <span class="text-lg font-medium">₱675.25</span>
             <div class="card-actions justify-end grid grid-cols-8 pt-7">
               <button class="btn btn-primary col-span-6">Add to cart</button>
               <button class="btn btn-neutral col-span-2">
@@ -231,29 +277,31 @@
           </div>
         </div>
         <!-- Card 4 -->
-        <div class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center">
+        <div class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
           <figure><img src="./images/Pop! Zenitsu Agatsuma, , hi-res.png" alt="" class="w-56">
           </figure>
           <div class="card-body">
             <h2 class="card-title">
-              POP! TANJIRO KAMADO
+              POP! ZENITSU AGATSUMA
             </h2>
             <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
             <!-- Rating -->
             <div class="rating rating-sm rating-half flex items-center">
               <input type="radio" name="rating-10" class="rating-hidden" disabled checked />
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked/>
-              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked/>
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
               <span class="ml-3 text-xs">10</span>
             </div>
+            <!-- Price -->
+            <span class="text-lg font-medium">₱675.25</span>
             <div class="card-actions justify-end grid grid-cols-8 pt-7">
               <button class="btn btn-primary col-span-6">Add to cart</button>
               <button class="btn btn-neutral col-span-2">
@@ -267,7 +315,75 @@
           </div>
         </div>
       </div>
-      <a class="link link-primary" style="margin-top: 2rem;">View all</a>
+      <a href="./collection.html" class="link link-primary" style="margin-top: 2rem;">View all</a>
+    </div>
+    <!-- Subscribe section and FAQs -->
+    <div class="min-h-screen px-28 space-y-12 pt-12 bg-base-200 flex flex-col justify-center" id="subscribe">
+      <div class="grid grid-cols-2">
+        <div class="col-span-1 space-y-12 pr-14">
+          <h1 class="text-6xl font-bold">FAQs</h1>
+          <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border border-neutral">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                What is Funko Pop's Demon Slayer edition?
+              </div>
+              <div class="collapse-content">
+                <p>This edition features a collection of Funko Pop figures inspired by the popular anime and manga
+                  series Demon Slayer. Each figure portrays characters from the series in their iconic poses and
+                  outfits.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border border-neutral">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                Can I display Funko Pop's Demon Slayer figures out of the box?
+              </div>
+              <div class="collapse-content">
+                <p>Absolutely! Many collectors choose to display their Funko Pop figures out of the box to showcase the
+                  intricate details and designs. However, keeping them in their original packaging may help preserve
+                  their value for collectors.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border border-neutral">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">
+                Do Funko Pop's Demon Slayer figures come with any accessories?
+              </div>
+              <div class="collapse-content">
+                <p>Typically, Funko Pop figures are designed as standalone collectibles and do not come with additional
+                  accessories. However, they are meticulously crafted to capture the essence of each character from the
+                  Demon Slayer series.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border border-neutral">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">
+                How can I care for my Funko Pop's Demon Slayer figures?
+              </div>
+              <div class="collapse-content">
+                <p>To maintain the quality and appearance of your Funko Pop figures, it's best to display them in a
+                  cool, dry place away from direct sunlight. Avoid exposing them to extreme temperatures or humidity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 space-y-10">
+          <h1 class="text-6xl font-bold">Funko's Newsletter</h1>
+          <p>Stay ahead of the curve with our exclusive mailing list! Sign up today and become a VIP member, gaining
+            access to a world of exciting perks. Be the first to know about the latest Funko Pop releases, from highly
+            anticipated Demon Slayer editions to other thrilling collections. Get insider information on upcoming
+            events, special promotions, and exclusive offers tailored just for you. Don't miss out on the chance to
+            immerse yourself in the ultimate Funko Pop experience. Join our mailing list now and let the excitement
+            begin!</p>
+          <!-- Email input for subscribe -->
+          <div class="join">
+            <input class="input input-bordered join-item w-52" placeholder="Your email address" />
+            <button class="btn btn-primary join-item rounded-xl">Subscribe</button>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <!-- Footer -->
@@ -295,13 +411,8 @@
   </footer>
   <footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300 px-28">
     <aside class="items-center grid-flow-col">
-      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-        clip-rule="evenodd" class="fill-current">
-        <path
-          d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
-        </path>
-      </svg>
-      <p>ACME Industries Ltd. <br>Providing reliable tech since 1992</p>
+      <h1 class="font-bold text-3xl mr-4">Funko</h1>
+      <p>Funko Pop <br>© Funko. All rights reserved.</p>
     </aside>
     <nav class="md:place-self-center md:justify-self-end">
       <div class="grid grid-flow-col gap-4">

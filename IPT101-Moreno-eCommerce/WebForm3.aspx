@@ -58,7 +58,7 @@
           <div class="card-body">
             <span class="font-bold text-lg">4 Items</span>
             <div class="card-actions">
-              <button class="btn btn-primary btn-block">View wishlist</button>
+              <a href="" class="btn btn-primary btn-block">View wishlist</a>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@
             <span class="font-bold text-lg">8 Items</span>
             <span class="text-info">Subtotal: ₱1200</span>
             <div class="card-actions">
-              <button class="btn btn-primary btn-block">View cart</button>
+              <a href="WebForm4.aspx" class="btn btn-primary btn-block">View cart</a>
             </div>
           </div>
         </div>

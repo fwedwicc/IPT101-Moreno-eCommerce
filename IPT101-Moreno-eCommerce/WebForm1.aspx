@@ -19,7 +19,7 @@
     <ul tabindex="0" class="flex flex-row flex-1 gap-9 mr-12">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="./collection.html">Collection</a></li>
+      <li><a href="WebForm2.aspx">Collection</a></li>
       <li><a href="#subscribe">Subscribe</a></li>
     </ul>
     <div class="flex-none gap-2">
@@ -315,7 +315,7 @@
           </div>
         </div>
       </div>
-      <a href="./collection.html" class="link link-primary" style="margin-top: 2rem;">View all</a>
+      <a href="WebForm2.aspx" class="link link-primary" style="margin-top: 2rem;">View all</a>
     </div>
     <!-- Subscribe section and FAQs -->
     <div class="min-h-screen px-28 space-y-12 pt-12 bg-base-200 flex flex-col justify-center" id="subscribe">

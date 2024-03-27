@@ -17,9 +17,9 @@
     </div>
     <!-- Links group -->
     <ul tabindex="0" class="flex flex-row flex-1 gap-9 mr-12">
-      <li><a href="./test-landing-page.html">Home</a></li>
+      <li><a href="WebForm1.aspx">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="./collection.html">Collection</a></li>
+      <li><a href="WebForm2.aspx">Collection</a></li>
       <li><a href="#subscribe">Subscribe</a></li>
     </ul>
     <div class="flex-none gap-2">
@@ -155,16 +155,20 @@
         </a>
         <!-- Modal Content -->
         <div class="modal" role="dialog" id="my_modal_8">
-          <div class="modal-box w-11/12 max-w-5xl">
-            <h3 class="font-bold text-lg">Hello!</h3>
-            <p class="py-4">This modal works with anchor links</p>
+          <div class="modal-box flex justify-center items-center flex-col">
+            <svg class="w-16 h-16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 21a9 9 0 1 1 0-18c1.052 0 2.062.18 3 .512M7 9.577l3.923 3.923 8.5-8.5M17 14v6m-3-3h6" />
+            </svg>
+            <p class="py-4">Product succcesfuly added to your shopping cart.</p>
             <div class="modal-action">
-              <a href="#" class="btn">Yay!</a>
+              <a href="#" class="btn">Okay</a>
             </div>
           </div>
         </div>
         <!-- Card 2 -->
-        <a href="#" class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
+        <a href="WebForm3.aspx" class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
           <figure><img src="./images/Pop! Nezuko Kamado, , hi-res.png" alt="" class="w-56">
           </figure>
           <div class="card-body">

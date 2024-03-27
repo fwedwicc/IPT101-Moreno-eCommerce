@@ -17,9 +17,9 @@
     </div>
     <!-- Links group -->
     <ul tabindex="0" class="flex flex-row flex-1 gap-9 mr-12">
-      <li><a href="./test-landing-page.html">Home</a></li>
+      <li><a href="WebForm1.aspx">Home</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="./collection.html">Collection</a></li>
+      <li><a href="WebForm2.aspx">Collection</a></li>
       <li><a href="#subscribe">Subscribe</a></li>
     </ul>
     <div class="flex-none gap-2">

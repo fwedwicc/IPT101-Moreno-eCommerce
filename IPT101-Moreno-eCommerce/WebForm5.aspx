@@ -51,14 +51,14 @@
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
             </svg>
-            <span class="badge badge-sm indicator-item">6</span>
+            <span class="badge badge-sm indicator-item">4</span>
           </div>
         </div>
         <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
           <div class="card-body">
-            <span class="font-bold text-lg">6 Items</span>
+            <span class="font-bold text-lg">4 Items</span>
             <div class="card-actions">
-              <a href="" class="btn btn-primary btn-block">View wishlist</a>
+              <button class="btn btn-primary btn-block">View wishlist</button>
             </div>
           </div>
         </div>
@@ -72,15 +72,15 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
-            <span class="badge badge-sm indicator-item">4</span>
+            <span class="badge badge-sm indicator-item">8</span>
           </div>
         </div>
         <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
           <div class="card-body">
-            <span class="font-bold text-lg">4 Items</span>
-            <span class="text-info">Subtotal: ₱1350.5</span>
+            <span class="font-bold text-lg">8 Items</span>
+            <span class="text-info">Subtotal: ₱1200</span>
             <div class="card-actions">
-              <a href="WebForm4.aspx" class="btn btn-primary btn-block">View cart</a>
+              <button class="btn btn-primary btn-block">View cart</button>
             </div>
           </div>
         </div>
@@ -111,89 +111,17 @@
   </div>
   <!-- Main -->
   <main>
-    <!-- Preview -->
-    <div class="min-h-screen px-28 bg-base-200 pt-36 space-y-12 flex flex-col justify-center items-center">
-      <div class="grid grid-cols-2">
-        <div class="col-span-1 space-y-12 pr-14">
-          <!-- Carousel -->
-          <div class="carousel w-auto h-[32rem] bg-base-100 rounded-2xl">
-            <div id="item1" class="carousel-item w-full flex justify-center">
-              <img src="./images/Pop! Nezuko Kamado, , hi-res.png" class="w-auto" />
-            </div>
-            <div id="item2" class="carousel-item w-full flex justify-center">
-              <img src="./images/Pop! Nezuko Kamado, , hi-res2.png" class="w-auto" />
-            </div>
-            <div id="item3" class="carousel-item w-full flex justify-center">
-              <img src="./images/Pop! Nezuko Kamado, , hi-res3.jpg" class="w-auto" />
-            </div>
-          </div>
-          <div class="flex justify-center w-full py-2 gap-2">
-            <a href="#item1" class="btn btn-xs">1</a>
-            <a href="#item2" class="btn btn-xs">2</a>
-            <a href="#item3" class="btn btn-xs">3</a>
-          </div>
-        </div>
-        <div class="col-span-1 space-y-12">
-          <h1 class="text-5xl font-bold pb-3">POP! NEZUKO KAMADO</h1>
-          <span>Demon Slayer: Kimetsu no Yaiba</span>
-          <h2 class="text-2xl font-bold">₱675.25</h2>
-          <div class="join">
-            <select class="select select-bordered join-item">
-              <option disabled selected>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-            </select>
-            <div class="indicator">
-              <a href="#my_modal_8" class="btn join-item btn-primary">Add to cart</a>
-            </div>
-            <!-- Modal Content -->
-            <div class="modal" role="dialog" id="my_modal_8">
-              <div class="modal-box flex justify-center items-center flex-col">
-                <svg class="w-16 h-16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                  fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 21a9 9 0 1 1 0-18c1.052 0 2.062.18 3 .512M7 9.577l3.923 3.923 8.5-8.5M17 14v6m-3-3h6" />
-                </svg>
-                <p class="py-4">Product succcesfuly added to your shopping cart.</p>
-                <div class="modal-action">
-                  <a href="#" class="btn">Okay</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p>Only two of the Kamado family survived a demon attack, and now Tanjiro and Nezuko are out for revenge.
-            Expand your Demon Slayer collection with Pop! Nezuko Kamado. Vinyl figure is approximately 3.5-inches tall.
-          </p>
-          <div class="dropdown dropdown-right">
-            <div tabindex="0" role="button" class="btn m-1 bg-base-100">More Details</div>
-            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 p-4 gap-3">
-              <li>Item Number: 49013</li>
-              <li>Category: Anime & Manga</li>
-              <li>License: Demon Slayer</li>
-              <li>Product Type: Pop!</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- You might also like -->
-    <div class="min-h-screen px-28 pt-28 space-y-20 flex flex-col justify-center items-center">
-      <h1 class="text-4xl font-bold">You might also like</h1>
+    <!-- Collection -->
+    <div class="min-h-screen px-28 pt-36 space-y-12 flex flex-col justify-center items-center">
+      <h1 class="text-4xl font-bold">Your Wishlist</h1>
       <div class="grid grid-cols-4 gap-10 pb-24">
         <!-- Card 1 -->
-        <a href="" class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
-          <figure><img src="./images/Pop! Mitsuri Kanroji, , hi-res.png" alt="" class="w-56">
+        <a href="#" class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
+          <figure><img src="./images/Pop! Jumbo Kyojuro Rengoku, , hi-res.png" alt="" class="w-56">
           </figure>
           <div class="card-body">
             <h2 class="card-title">
-              POP! MITSURI KANROJI
+              POP! KYOJURO RENGOKU
             </h2>
             <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
             <!-- Rating -->
@@ -216,10 +144,8 @@
             <div class="card-actions justify-end grid grid-cols-8 pt-7">
               <button class="btn btn-primary col-span-6">Add to cart</button>
               <button class="btn btn-neutral col-span-2">
-                <svg class="text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  width="30" height="30" fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"/>
                 </svg>
               </button>
             </div>
@@ -227,11 +153,11 @@
         </a>
         <!-- Card 2 -->
         <a href="#" class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
-          <figure><img src="./images/Pop! Tamayo, , hi-res.png" alt="" class="w-56">
+          <figure><img src="./images/Pop! Rui, , hi-res.png" alt="" class="w-56">
           </figure>
           <div class="card-body">
             <h2 class="card-title">
-              POP! TAMAYO
+              POP! RUI
             </h2>
             <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
             <!-- Rating -->
@@ -254,10 +180,8 @@
             <div class="card-actions justify-end grid grid-cols-8 pt-7">
               <button class="btn btn-primary col-span-6">Add to cart</button>
               <button class="btn btn-neutral col-span-2">
-                <svg class="text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  width="30" height="30" fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"/>
                 </svg>
               </button>
             </div>
@@ -265,11 +189,11 @@
         </a>
         <!-- Card 3 -->
         <a href="#" class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
-          <figure><img src="./images/Pop! Makomo, , hi-res.png" alt="" class="w-56">
+          <figure><img src="./images/Pop! Haganezuka, , hi-res.png" alt="" class="w-56">
           </figure>
           <div class="card-body">
             <h2 class="card-title">
-              POP! MAKOMO
+              POP! HAGANEZUKA
             </h2>
             <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
             <!-- Rating -->
@@ -292,10 +216,8 @@
             <div class="card-actions justify-end grid grid-cols-8 pt-7">
               <button class="btn btn-primary col-span-6">Add to cart</button>
               <button class="btn btn-neutral col-span-2">
-                <svg class="text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  width="30" height="30" fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"/>
                 </svg>
               </button>
             </div>
@@ -303,11 +225,11 @@
         </a>
         <!-- Card 4 -->
         <a href="#" class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
-          <figure><img src="./images/Pop! Kanao Tsuyuri, , hi-res.png" alt="" class="w-56">
+          <figure><img src="./images/Pop! Tengen Uzui with Nichirin Cleavers, , hi-res.png" alt="" class="w-56">
           </figure>
           <div class="card-body">
             <h2 class="card-title">
-              POP! KANAO TSUYURI
+              POP! TENGEN UZUI
             </h2>
             <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
             <!-- Rating -->
@@ -330,10 +252,80 @@
             <div class="card-actions justify-end grid grid-cols-8 pt-7">
               <button class="btn btn-primary col-span-6">Add to cart</button>
               <button class="btn btn-neutral col-span-2">
-                <svg class="text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  width="30" height="30" fill="none" viewBox="0 0 24 24">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </a>
+        <!-- Card 5 -->
+        <a href="#" class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
+          <figure><img src="./images/Pop! Sabito, , hi-res.png" alt="" class="w-56">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              POP! SABITO
+            </h2>
+            <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
+            <!-- Rating -->
+            <div class="rating rating-sm rating-half flex items-center">
+              <input type="radio" name="rating-10" class="rating-hidden" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <span class="ml-3 text-xs">10</span>
+            </div>
+            <!-- Price -->
+            <span class="text-lg font-medium">₱675.25</span>
+            <div class="card-actions justify-end grid grid-cols-8 pt-7">
+              <button class="btn btn-primary col-span-6">Add to cart</button>
+              <button class="btn btn-neutral col-span-2">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </a>
+        <!-- Card 6 -->
+        <a href="#" class="card-compact w-72 bg-base-100 shadow-xl flex flex-col items-center rounded-2xl">
+          <figure><img src="./images/Pop! Daki, , hi-res.png" alt="" class="w-56">
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              POP! DAKI
+            </h2>
+            <p class="text-sm">Demon Slayer: Kimetsu no Yaiba</p>
+            <!-- Rating -->
+            <div class="rating rating-sm rating-half flex items-center">
+              <input type="radio" name="rating-10" class="rating-hidden" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" disabled checked />
+              <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" disabled checked />
+              <span class="ml-3 text-xs">10</span>
+            </div>
+            <!-- Price -->
+            <span class="text-lg font-medium">₱675.25</span>
+            <div class="card-actions justify-end grid grid-cols-8 pt-7">
+              <button class="btn btn-primary col-span-6">Add to cart</button>
+              <button class="btn btn-neutral col-span-2">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"/>
                 </svg>
               </button>
             </div>

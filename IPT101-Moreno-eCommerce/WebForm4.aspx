@@ -58,7 +58,7 @@
           <div class="card-body">
             <span class="font-bold text-lg">6 Items</span>
             <div class="card-actions">
-              <a href="#" class="btn btn-primary btn-block">View wishlist</a>
+              <a href="WebForm5.aspx" class="btn btn-primary btn-block">View wishlist</a>
             </div>
           </div>
         </div>
@@ -327,7 +327,7 @@
               </div>
               <div class="flex flex-row justify-between items-center pt-8">
                 <h2 class="text-2xl font-bold">Estimated Total:</h2>
-                <p class="text-end text-2xl font-bold">1741.64</p>
+                <p class="text-end text-2xl font-bold">₱1741.64</p>
               </div>
               <div class="card-actions justify-end pt-8">
                 <button class="btn btn-primary w-full">Buy Now</button>

@@ -280,8 +280,8 @@
                   </td>
                   <td>
                     <select class="select select-bordered join-item">
-                      <option disabled selected>1</option>
-                      <option>2</option>
+                      <option disabled>1</option>
+                      <option selected>2</option>
                       <option>3</option>
                       <option>4</option>
                       <option>5</option>
@@ -336,6 +336,76 @@
           </div>
         </div>
       </div>
+      <!-- My purchase -->
+        <div class="overflow-x-auto mb-9">
+            <h1 class="text-5xl font-bold pb-10">My Purchase</h1>
+            <table class="table">
+            <!-- head -->
+            <thead>
+                <tr>
+                <th class="text-2xl text-neutral-content">Product</th>
+                <th class="text-2xl text-neutral-content">QTY</th>
+                <th class="text-2xl text-neutral-content">Price</th>
+                <th class="text-2xl text-neutral-content">Status</th>
+                <th class="text-2xl text-neutral-content">Date</th>
+                <th class="text-2xl text-neutral-content">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- row 1 -->
+                <!-- <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                        <div class="avatar">
+                            <div class="w-28 h-28">
+                            <img src="./images/Pop! Nezuko Kamado, , hi-res.png" alt="Avatar Tailwind CSS Component" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg">POP! NEZUKO KAMADO</div>
+                            <div class="text-sm opacity-50">Demon Slayer: Kimetsu no Yaiba</div>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="font-bold">
+                      2
+                    </td>
+                    <td>₱675.25</td>
+                    <td>To Ship</td>
+                    <td>May 17, 2024</td>
+                    <td>
+                        <button class="btn btn-active btn-link">Refund</button>
+                    </td> 
+                </tr> -->
+                <!-- row 2 -->
+                <!-- <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                        <div class="avatar">
+                            <div class="w-28 h-28">
+                            <img src="./images/Pop! Tanjiro Kamado, , hi-res.png" alt="Avatar Tailwind CSS Component" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg">POP! NEZUKO KAMADO</div>
+                            <div class="text-sm opacity-50">Demon Slayer: Kimetsu no Yaiba</div>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="font-bold">
+                      2
+                    </td>
+                    <td>₱675.25</td>
+                    <td>To Ship</td>
+                    <td>May 17, 2024</td>
+                    <td>
+                        <button class="btn btn-active btn-link">Refund</button>
+                    </td>
+                </tr> -->
+            </tbody>
+            </table>
+            <h1 class="py-12 text-center font-medium">No items yet.</h1>
+        </div>
     </div>
   </main>
   <!-- Footer -->

@@ -130,10 +130,10 @@
               </thead>
               <tbody>
                 <!-- row 1 -->
-                <tr>
+                <!-- <tr>
                   <th>
                     <label>
-                      <input type="checkbox" class="checkbox checkbox-primary" checked />
+                      <input type="checkbox" class="checkbox checkbox-primary" />
                     </label>
                   </th>
                   <td>
@@ -151,8 +151,8 @@
                   </td>
                   <td>
                     <select class="select select-bordered join-item">
-                      <option disabled selected>1</option>
-                      <option>2</option>
+                      <option disabled>1</option>
+                      <option selected>2</option>
                       <option>3</option>
                       <option>4</option>
                       <option>5</option>
@@ -171,12 +171,12 @@
                       </svg>                      
                     </button>
                   </th>
-                </tr>
+                </tr>  -->
                 <!-- row 2 -->
-                <tr>
+                 <tr>
                   <th>
                     <label>
-                      <input type="checkbox" class="checkbox checkbox-primary" checked />
+                      <input type="checkbox" class="checkbox checkbox-primary" />
                     </label>
                   </th>
                   <td>
@@ -214,9 +214,9 @@
                       </svg>                      
                     </button>
                   </th>
-                </tr>
+                </tr> 
                 <!-- row 3 -->
-                <tr>
+               <!-- <tr>
                   <th>
                     <label>
                       <input type="checkbox" class="checkbox checkbox-primary" />
@@ -251,15 +251,24 @@
                   </td>
                   <td>₱675.25</td>
                   <th>
-                    <button class="btn btn-ghost btn-xs">
+                    <button class="btn btn-ghost btn-xs" onclick="my_modal_4.showModal()">
                       <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"/>
                       </svg>                      
                     </button>
+                      <dialog id="my_modal_4" class="modal">
+                        <div class="modal-box">
+                        <h3 class="font-bold text-lg">Success!</h3>
+                        <p class="py-4">The item is successfully deleted from your cart. Thank you!</p>
+                        </div>
+                        <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                        </form>
+                    </dialog>
                   </th>
-                </tr>
+                </tr> -->
                 <!-- row 4 -->
-                <tr>
+                <!-- <tr>
                   <th>
                     <label>
                       <input type="checkbox" class="checkbox checkbox-primary" />
@@ -280,8 +289,8 @@
                   </td>
                   <td>
                     <select class="select select-bordered join-item">
-                      <option disabled>1</option>
-                      <option selected>2</option>
+                      <option disabled selected>1</option>
+                      <option>2</option>
                       <option>3</option>
                       <option>4</option>
                       <option>5</option>
@@ -294,13 +303,13 @@
                   </td>
                   <td>₱675.25</td>
                   <th>
-                    <button class="btn btn-ghost btn-xs">
+                    <button class="btn btn-ghost btn-xs" onclick="my_modal_2.showModal()">
                       <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"/>
                       </svg>                      
                     </button>
                   </th>
-                </tr>
+                </tr>-->
               </tbody>
             </table>
           </div>
@@ -310,16 +319,16 @@
             <div class="card-body">
               <div class="flex flex-row justify-between items-center pt-4">
                 <h2 class="card-title text-2xl">Summary</h2>
-                <p class="text-end text-lg font-bold">2 Total</p>
+                <p class="text-end text-lg font-bold">0 Total</p>
               </div>
               <div class="divider"></div>
               <div class="flex flex-row justify-between items-center">
                 <h2 class="">Subtotal:</h2>
-                <p class="text-end text-lg">₱1350.5</p>
+                <p class="text-end text-lg">₱0</p>
               </div>
               <div class="flex flex-row justify-between items-center">
                 <h2 class="">Shipping:</h2>
-                <p class="text-end text-lg">₱391.14</p>
+                <p class="text-end text-lg">₱0</p>
               </div>
               <div class="flex flex-row justify-between items-center">
                 <h2 class="">Sales Tax:</h2>
@@ -327,11 +336,20 @@
               </div>
               <div class="flex flex-row justify-between items-center pt-8">
                 <h2 class="text-2xl font-bold">Estimated Total:</h2>
-                <p class="text-end text-2xl font-bold">₱1741.64</p>
+                <p class="text-end text-2xl font-bold">₱0</p>
               </div>
               <div class="card-actions justify-end pt-8">
-                <button class="btn btn-primary w-full">Buy Now</button>
+                <button onclick="my_modal_2.showModal()" class="btn btn-primary w-full">Buy Now</buttononclick="my_modal_2.showModal()>
               </div>
+                <dialog id="my_modal_2" class="modal">
+                  <div class="modal-box">
+                    <h3 class="font-bold text-lg">Success!</h3>
+                    <p class="py-4">The items will be in the purchase. Thank you!</p>
+                  </div>
+                  <form method="dialog" class="modal-backdrop">
+                    <button>close</button>
+                  </form>
+                </dialog>
             </div>
           </div>
         </div>
@@ -353,7 +371,7 @@
             </thead>
             <tbody>
                 <!-- row 1 -->
-                <!-- <tr>
+                 <tr>
                     <td>
                         <div class="flex items-center gap-3">
                         <div class="avatar">
@@ -376,9 +394,9 @@
                     <td>
                         <button class="btn btn-active btn-link">Refund</button>
                     </td> 
-                </tr> -->
+                </tr> 
                 <!-- row 2 -->
-                <!-- <tr>
+                 <!-- <tr>
                     <td>
                         <div class="flex items-center gap-3">
                         <div class="avatar">
@@ -399,12 +417,18 @@
                     <td>To Ship</td>
                     <td>May 17, 2024</td>
                     <td>
-                        <button class="btn btn-active btn-link">Refund</button>
+                        <button onclick="my_modal_3.showModal()" class="btn btn-active btn-link">Refund</button>
                     </td>
+                     <dialog id="my_modal_3" class="modal">
+                      <div class="modal-box">
+                        <h3 class="font-bold text-lg">Success!</h3>
+                        <p class="py-4">The items will be in the cart. Thank you!</p>
+                      </div>
+                    </dialog>
                 </tr> -->
             </tbody>
             </table>
-            <h1 class="py-12 text-center font-medium">No items yet.</h1>
+            <!-- <h1 class="py-12 text-center font-medium">No items yet.</h1> -->
         </div>
     </div>
   </main>

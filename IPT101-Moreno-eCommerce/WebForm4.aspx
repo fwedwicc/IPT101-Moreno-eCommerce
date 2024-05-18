@@ -130,10 +130,10 @@
               </thead>
               <tbody>
                 <!-- row 1 -->
-                <!-- <tr>
+                <tr>
                   <th>
                     <label>
-                      <input type="checkbox" class="checkbox checkbox-primary" />
+                      <input type="checkbox" class="checkbox checkbox-primary" checked />
                     </label>
                   </th>
                   <td>
@@ -171,12 +171,12 @@
                       </svg>                      
                     </button>
                   </th>
-                </tr>  -->
+                </tr> 
                 <!-- row 2 -->
                  <tr>
                   <th>
                     <label>
-                      <input type="checkbox" class="checkbox checkbox-primary" />
+                      <input type="checkbox" class="checkbox checkbox-primary" checked />
                     </label>
                   </th>
                   <td>
@@ -216,7 +216,7 @@
                   </th>
                 </tr> 
                 <!-- row 3 -->
-               <!-- <tr>
+                <tr>
                   <th>
                     <label>
                       <input type="checkbox" class="checkbox checkbox-primary" />
@@ -266,9 +266,9 @@
                         </form>
                     </dialog>
                   </th>
-                </tr> -->
+                </tr> 
                 <!-- row 4 -->
-                <!-- <tr>
+                <tr>
                   <th>
                     <label>
                       <input type="checkbox" class="checkbox checkbox-primary" />
@@ -309,7 +309,7 @@
                       </svg>                      
                     </button>
                   </th>
-                </tr>-->
+                </tr>
               </tbody>
             </table>
           </div>
@@ -319,16 +319,16 @@
             <div class="card-body">
               <div class="flex flex-row justify-between items-center pt-4">
                 <h2 class="card-title text-2xl">Summary</h2>
-                <p class="text-end text-lg font-bold">0 Total</p>
+                <p class="text-end text-lg font-bold">2 Totals</p>
               </div>
               <div class="divider"></div>
               <div class="flex flex-row justify-between items-center">
                 <h2 class="">Subtotal:</h2>
-                <p class="text-end text-lg">₱0</p>
+                <p class="text-end text-lg">₱1350.5</p>
               </div>
               <div class="flex flex-row justify-between items-center">
                 <h2 class="">Shipping:</h2>
-                <p class="text-end text-lg">₱0</p>
+                <p class="text-end text-lg">₱175</p>
               </div>
               <div class="flex flex-row justify-between items-center">
                 <h2 class="">Sales Tax:</h2>
@@ -336,7 +336,7 @@
               </div>
               <div class="flex flex-row justify-between items-center pt-8">
                 <h2 class="text-2xl font-bold">Estimated Total:</h2>
-                <p class="text-end text-2xl font-bold">₱0</p>
+                <p class="text-end text-2xl font-bold">₱1525.5</p>
               </div>
               <div class="card-actions justify-end pt-8">
                 <button onclick="my_modal_2.showModal()" class="btn btn-primary w-full">Buy Now</buttononclick="my_modal_2.showModal()>
@@ -355,9 +355,9 @@
         </div>
       </div>
       <!-- My purchase -->
-        <div class="overflow-x-auto mb-9">
+        <div class="overflow-x-auto">
             <h1 class="text-5xl font-bold pb-10">My Purchase</h1>
-            <table class="table">
+            <table class="table mb-12">
             <!-- head -->
             <thead>
                 <tr>
@@ -376,17 +376,17 @@
                         <div class="flex items-center gap-3">
                         <div class="avatar">
                             <div class="w-28 h-28">
-                            <img src="./images/Pop! Nezuko Kamado, , hi-res.png" alt="Avatar Tailwind CSS Component" />
+                            <img src="./images/Pop! Tengen Uzui with Nichirin Cleavers, , hi-res.png" alt="Avatar Tailwind CSS Component" />
                             </div>
                         </div>
                         <div>
-                            <div class="font-bold text-lg">POP! NEZUKO KAMADO</div>
+                            <div class="font-bold text-lg">POP! TENGEN UZUI</div>
                             <div class="text-sm opacity-50">Demon Slayer: Kimetsu no Yaiba</div>
                         </div>
                         </div>
                     </td>
                     <td class="font-bold">
-                      2
+                      1
                     </td>
                     <td>₱675.25</td>
                     <td>To Ship</td>
@@ -396,22 +396,22 @@
                     </td> 
                 </tr> 
                 <!-- row 2 -->
-                 <!-- <tr>
+                <tr>
                     <td>
                         <div class="flex items-center gap-3">
                         <div class="avatar">
                             <div class="w-28 h-28">
-                            <img src="./images/Pop! Tanjiro Kamado, , hi-res.png" alt="Avatar Tailwind CSS Component" />
+                            <img src="./images/Pop! Jumbo Kyojuro Rengoku, , hi-res.png" alt="Avatar Tailwind CSS Component" />
                             </div>
                         </div>
                         <div>
-                            <div class="font-bold text-lg">POP! NEZUKO KAMADO</div>
+                            <div class="font-bold text-lg">POP! KYOJURO RENGOKU</div>
                             <div class="text-sm opacity-50">Demon Slayer: Kimetsu no Yaiba</div>
                         </div>
                         </div>
                     </td>
                     <td class="font-bold">
-                      2
+                      1
                     </td>
                     <td>₱675.25</td>
                     <td>To Ship</td>
@@ -425,7 +425,69 @@
                         <p class="py-4">The items will be in the cart. Thank you!</p>
                       </div>
                     </dialog>
-                </tr> -->
+                </tr> 
+                <!-- row 3 -->
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                        <div class="avatar">
+                            <div class="w-28 h-28">
+                            <img src="./images/Pop! Mitsuri Kanroji, , hi-res.png" alt="Avatar Tailwind CSS Component" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg">POP! MITSURI KANJORI</div>
+                            <div class="text-sm opacity-50">Demon Slayer: Kimetsu no Yaiba</div>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="font-bold">
+                      1
+                    </td>
+                    <td>₱675.25</td>
+                    <td>To Ship</td>
+                    <td>May 17, 2024</td>
+                    <td>
+                        <button onclick="my_modal_3.showModal()" class="btn btn-active btn-link">Refund</button>
+                    </td>
+                     <dialog id="my_modal_3" class="modal">
+                      <div class="modal-box">
+                        <h3 class="font-bold text-lg">Success!</h3>
+                        <p class="py-4">The items will be in the cart. Thank you!</p>
+                      </div>
+                    </dialog>
+                </tr> 
+                <!-- row 4 -->
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                        <div class="avatar">
+                            <div class="w-28 h-28">
+                            <img src="./images/Pop! Haganezuka, , hi-res.png" alt="Avatar Tailwind CSS Component" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg">POP! HAGANEZUKA</div>
+                            <div class="text-sm opacity-50">Demon Slayer: Kimetsu no Yaiba</div>
+                        </div>
+                        </div>
+                    </td>
+                    <td class="font-bold">
+                      1
+                    </td>
+                    <td>₱675.25</td>
+                    <td>To Ship</td>
+                    <td>May 17, 2024</td>
+                    <td>
+                        <button onclick="my_modal_3.showModal()" class="btn btn-active btn-link">Refund</button>
+                    </td>
+                     <dialog id="my_modal_3" class="modal">
+                      <div class="modal-box">
+                        <h3 class="font-bold text-lg">Success!</h3>
+                        <p class="py-4">The items will be in the cart. Thank you!</p>
+                      </div>
+                    </dialog>
+                </tr> 
             </tbody>
             </table>
             <!-- <h1 class="py-12 text-center font-medium">No items yet.</h1> -->
